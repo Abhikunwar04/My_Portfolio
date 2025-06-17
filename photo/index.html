@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Photography</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header id="top-bar">
+    <div class="top-content">
+      <div class="logo-block">
+        <div class="logo">My Photofolio📷<span class="dot">.</span></div>
+      </div>
+      <div class="theme-toggle">
+        <button id="toggle-theme">🌞</button>
+      </div>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="javascript:void(0);" id="contact-link">Contact</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <div class="hero-fade-slideshow" data-aos="fade-up">
+      <div class="fade-slide">
+        <img src="images/pic1.jpg" />
+        <img src="images/pic2.jpg" />
+        <img src="images/pic3.jpg" />
+        <img src="images/pic4.jpg" />
+        <img src="images/pic5.jpg" />
+        <img src="images/pic6.jpg" />
+        <img src="images/pic7.jpg" />
+        <img src="images/pic8.jpg" />
+        <img src="images/pic9.jpg" />
+        <img src="images/pic10.jpg" />
+      </div>
+      <div class="hero-overlay">
+        <h1 id="main-title">Capturing Life</h1>
+        <p id="quote-text">Through My Device</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="gallery-social-icons" id="slideshow-icons" data-aos="fade-up">
+    <div class="social-icons">
+      <a href="https://instagram.com/_abhi__kunwar_" target="_blank" title="@_abhi__kunwar_"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/9410332773" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://github.com/Abhikunwar04" target="_blank" title="@Abhikunwar04"><i class="fab fa-github"></i></a>
+      <a href="https://www.snapchat.com/add/abhi_kunwar07" target="_blank" title="@abhi_kunwar07"><i class="fab fa-snapchat-ghost"></i></a>
+    </div>
+  </div>
+
+  <section id="gallery">
+    <h2 data-aos="fade-right">Some Beautiful Picture's</h2>
+    <div class="gallery-container">
+      <img src="images/photo1.jpg" alt="Photo 1" data-aos="zoom-in" />
+      <img src="images/photo2.jpg" alt="Photo 2" data-aos="zoom-in" />
+      <img src="images/photo3.jpg" alt="Photo 3" data-aos="zoom-in" />
+      <img src="images/photo4.jpg" alt="Photo 4" data-aos="zoom-in" />
+
+      <!-- ✅ Reels Section -->
+      <div class="gallery-reels" data-aos="fade-up">
+        <h3>Short Videos</h3>
+        <div class="reel-wrapper">
+          <button class="reel-btn left" onclick="scrollReels('left')">&#10094;</button>
+          <div class="reel-track-scroll" id="reel-scroll">
+            <video src="reels/reel1.mp4"  controls muted playsinline ></video>
+            <video src="reels/reel2.mp4"  controls muted playsinline ></video>
+            <video src="reels/reel3.mp4"  controls muted playsinline ></video>
+            <video src="reels/reel4.mp4"  controls muted playsinline ></video>
+          </div>
+          <button class="reel-btn right" onclick="scrollReels('right')">&#10095;</button>
+        </div>
+      </div>
+
+      <img src="images/photo5.jpg" alt="Photo 5" data-aos="zoom-in" />
+      <img src="images/photo6.jpg" alt="Photo 6" data-aos="zoom-in" />
+      <img src="images/photo7.jpg" alt="Photo 7" data-aos="zoom-in" />
+      <img src="images/photo8.jpg" alt="Photo 8" data-aos="zoom-in" />
+      <img src="images/photo9.jpg" alt="Photo 9" data-aos="zoom-in" />
+      <img src="images/photo10.jpg" alt="Photo 10" data-aos="zoom-in" />
+      <img src="images/photo11.jpg" alt="Photo 11" data-aos="zoom-in" />
+      <img src="images/photo12.jpg" alt="Photo 12" data-aos="zoom-in" />
+      <img src="images/photo13.jpg" alt="Photo 13" data-aos="zoom-in" />
+      <img src="images/photo14.jpg" alt="Photo 14" data-aos="zoom-in" />
+      <img src="images/photo15.jpg" alt="Photo 15" data-aos="zoom-in" />
+    </div>
+  </section>
+  <section id="devotional" data-aos="fade-up">
+  <h2>Devotional Moments</h2>
+  <div class="devotional-container">
+    <div class="devotional-item">
+      <img src="images/dev1.jpg" alt="Devotional 1"class="zoomable">
+      <p class="devotional-quote">"ॐ त्र्यम्बकं यजामहे सुगन्धिं पुष्टिवर्धनम्। उर्वारुकमिव बन्धनान्मृत्योर्मुक्षीय मामृतात्।"</p>
+    </div>
+    <div class="devotional-item">
+      <img src="images/dev2.jpg" alt="Devotional 2"class="zoomable">
+      <p class="devotional-quote">"जहाँ विश्वास है, वहाँ रास्ता है।"</p>
+    </div>
+    <div class="devotional-item">
+      <img src="images/dev3.jpg" alt="Devotional 3"class="zoomable">
+      <p class="devotional-quote">"ॐ नमः शिवाय - यह मंत्र आत्मा की शुद्धि है।"</p>
+    </div>
+  </div>
+</section>
+
+
+<section id="Feedback">
+  <h2 data-aos="fade-left">Feedback</h2>
+ <form data-aos="fade-up">
+  <input type="text" id="name" name="name" placeholder="Your Name" required />
+  <input type="email" id="email" name="email" placeholder="Your Email" required />
+  <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+  <button type="submit">Send</button>
+</form>
+
+  </form>
+</section>
+
+  <footer>
+    <p>&copy; 2025 My Photography. All rights reserved. (@_abhi__kunwar_)</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <button id="back-to-top" title="Back to Top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
