@@ -3,22 +3,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Abhi Kunwar | IT Student/Learner, Developer & Creative Learner Portfolio">
   <title>Abhi Kunwar | IT Learner</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="icon" href="favicon.png" type="image/png" />
+  
 </head>
 <body>
+  <div id="preloader">
+    <div class="container">
+      <div class="box">
+        <span style="--i: 1"><i>WELCOME</i> TO <i>PORTFOLIO</i></span>
+        <span style="--i: 2"><i>I </i> Am <i>Abhi</i></span>
+        <span style="--i: 3"><i>( ꩜</i>  ᯅ  <i>꩜;)</i></span>
+        <span style="--i: 4"><i>アビシェク</i> ❤︎ <i>クンワール</i></span>
+        <span style="--i: 5"><i>आपका</i> स्वागत <i>है|</i></span>
+        <span style="--i: 6"><i>WELCOME</i> TO <i>PORTFOLIO</i></span>
+        <span style="--i: 7"><i>Print</i> <i>("Hello World!")</i></span>
+        <span style="--i: 8"><i>I</i> Am <i>Abhiiiii......</i></span>
+      </div>
+    </div>
+  </div>
 
-  <!-- Header -->
   <header id="top-bar">
-    <div class="logo">Abhi Kunwar<span class="dot">.</span></div>
+    <div class="header-left">
+      <div class="logo">Abhi Kunwar<span class="dot">.</span></div>
+      <img src="images/profile.jpg" alt="Abhi Kunwar" class="top-profile-pic" />
+    </div>
     <nav>
-      <ul class="nav-links">
+      <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="nav-links" id="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="photo/index.html" target="_blank">Photofolio</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -27,77 +48,110 @@
     <button id="theme-toggle" class="theme-toggle-btn">🌓</button>
   </header>
 
-  <!-- Hero Section -->
   <section id="home" class="hero-section">
-<div class="hero-text" id="hero">
-  <h1>Hi, I'm Abhi Kunwar</h1>
-  <p>IT Learner | Student</p>
-  <div class="social-icons">
-   <div class="social-icons">
-  <a href="https://www.instagram.com/_abhi__kunwar_" target="_blank"><i class="fab fa-instagram"></i></a>
-  <a href="https://wa.me/9410332773" target="_blank"><i class="fab fa-whatsapp"></i></a>
-  <a href="https://www.linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
-  <a href="https://github.com/Abhikunwar04" target="_blank"><i class="fab fa-github"></i></a>
-</div>
+    <div class="hero-text" id="hero">
+      <h1>Hi, I'm Abhi Kunwar</h1>
+      <p>IT Learner | Student | Enthusiast</p>
+      <div class="cta-group">
+        <a href="#projects" class="cta-btn">See My Work</a>
+        <a href="#contact" class="cta-btn ghost">Get in Touch</a>
+      </div>
+      <div class="social-icons">
+        <a href="photo/index.html" title="Photofolio"><i class="fas fa-image"></i></a>
+        <a href="https://www.instagram.com/_abhi__kunwar_" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/9410332773" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.linkedin.com/in/yourusername" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Abhikunwar04" title="GitHub"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </section>
 
+  <div class="resume-wrapper" data-aos="fade-up">
+    <a href="Abhi_Kunwar_Resume.pdf" class="resume-btn" target="_blank">View Resume</a>
   </div>
+
+  <section id="about" class="section about-section">
+    <div class="about-container">
+      <div class="about-lottie left">
+        <lottie-player src="Developer.json" background="transparent" speed="1" loop autoplay></lottie-player>
+      </div>
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>I'm an enthusiastic learner currently pursuing IT, passionate about creativity, design,
+      and modern digital experiences. </p>
+        <p>I enjoy experimenting with new technologies and exploring my artistic side through visuals and photography.</p>
+        <p><strong>Currently Learning:</strong>Python</p>
+      </div>
+      <div class="about-lottie right">
+        <lottie-player src="Stress Management.json" background="transparent" speed="1" loop autoplay></lottie-player>
+      </div>
+    </div>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="section" data-aos="fade-up">
-    <h2>About Me</h2>
-    <p>
-      I'm an enthusiastic learner currently pursuing IT, passionate about creativity, design,
-      and modern digital experiences. I enjoy experimenting with new technologies and exploring
-      my artistic side through visuals and photography.
-    </p>
-  </section>
-
-  <!-- Skills Section -->
   <section id="skills" class="section" data-aos="fade-up">
     <h2>Skills</h2>
     <div class="skills-grid">
-      <div class="skill-card" data-aos="zoom-in">HTML</div>
-      <div class="skill-card" data-aos="zoom-in">CSS</div>
-      <div class="skill-card" data-aos="zoom-in">JavaScript</div>
-      <div class="skill-card" data-aos="zoom-in">Basic Python</div>
+      <div class="skill-card">HTML</div>
+      <div class="skill-card">CSS</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">Python (Basic)</div>
+      <div class="skill-card">Git & GitHub</div>
+      <div class="skill-card">Responsive Design</div>
     </div>
   </section>
 
-  <!-- Projects Section -->
   <section id="projects" class="section" data-aos="fade-up">
     <h2>Projects</h2>
     <div class="projects-grid">
-      <div class="project-card" data-aos="flip-left">
+      <div class="project-card">
+        <img src="images/photo-gallery.png" alt="Photo Gallery">
         <h3>Photography Site</h3>
-        <p>A photo gallery with custom drip animation effect.</p>
+        <p>A creative photo gallery with custom drip animation effect.</p>
+        <a href="photo/index.html" class="project-btn">Live</a>
+        <a href="https://github.com/Abhikunwar04/photo-site" class="project-btn ghost">Code</a>
       </div>
-      <div class="project-card" data-aos="flip-left">
+      <div class="project-card">
+        <img src="images/portfolio.png" alt="Portfolio Starter">
         <h3>Portfolio Starter</h3>
-        <p>A basic animated personal site for learning & self showcase.</p>
+        <p>A basic animated personal site to learn and showcase projects.</p>
+        <a href="#" class="project-btn">Live</a>
+        <a href="https://github.com/Abhikunwar04/portfolio" class="project-btn ghost">Code</a>
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="section" data-aos="fade-up">
-    <h2>Contact Me</h2>
-    <form class="contact-form">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
+  <section id="contact" class="feedback-section">
+    <div class="warrior-gate">
+      <lottie-player src="Warrior.json" background="transparent" speed="1" loop autoplay></lottie-player>
+      <div class="contact-form-wrapper">
+        <h2>Send Feedback</h2>
+        <form class="contact-form" id="feedback-form">
+          <div class="input-group">
+            <i class="fas fa-user"></i>
+            <input type="text" name="from_name" placeholder="Your Name" required />
+          </div>
+          <div class="input-group">
+            <i class="fas fa-envelope"></i>
+            <input type="email" name="from_email" placeholder="Your Gmail" required />
+          </div>
+          <div class="input-group">
+            <i class="fas fa-comment"></i>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+      <lottie-player src="Warrior.json" background="transparent" speed="1" loop autoplay></lottie-player>
+    </div>
   </section>
 
-  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Abhi Kunwar. All rights reserved.</p>
   </footer>
 
-  <!-- Scripts -->
-  <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>AOS.init();</script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
