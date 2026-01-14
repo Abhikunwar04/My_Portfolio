@@ -177,7 +177,7 @@ body.light-theme .input-group textarea {
 .box {
   position: relative;
   transform-style: preserve-3d;
-  animation: animate 7s ease-in-out infinite alternate;
+  animation: animate 4s ease-in-out infinite alternate;
 }
 
 .box span {
