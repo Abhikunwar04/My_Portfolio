@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Abhi Kunwar | Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body class="loading">
+
+<!-- PRELOADER (UNCHANGED STRUCTURE SAFE) -->
+<div id="preloader">
+  <div id="ld">
+    <canvas id="mc"></canvas>
+
+    <div id="phase1">
+      <span id="greetEl"></span>
+    </div>
+
+    <div id="phase2">
+      <div class="name">
+        <span id="nm">ABHI KUNWAR</span>
+        <span class="gl r" id="glR"></span>
+        <span class="gl g" id="glG"></span>
+      </div>
+
+      <div class="prog-wrap">
+        <div class="prog-track">
+          <div class="prog-fill" id="fill"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<header id="top-bar">
+  <div class="logo">Abhi Kunwar.</div>
+
+  <nav>
+    <ul id="nav-links">
+      <li><a href="#heroScroll">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section id="heroScroll">
+
+  <canvas id="heroCanvas"></canvas>
+
+  <div class="hero-text" id="hero">
+    <h1>Hi, I'm Abhi Kunwar</h1>
+    <p>IT Learner | Developer | Creator</p>
+
+    <div class="cta-group">
+      <a href="#projects">See Work</a>
+      <a href="#contact" class="ghost">Contact</a>
+    </div>
+  </div>
+
+</section>
+
+<div id="scrollSpacer"></div>
+
+<!-- MAIN CONTENT -->
+<main id="mainContent">
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>Frontend Developer | UI/UX Learner | Creative Builder</p>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="card">Project 1</div>
+      <div class="card">Project 2</div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+
+    <form id="feedback-form">
+      <input type="text" name="from_name" placeholder="Name">
+      <input type="email" name="from_email" placeholder="Email">
+      <textarea name="message" placeholder="Message"></textarea>
+      <button>Send</button>
+    </form>
+
+  </section>
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

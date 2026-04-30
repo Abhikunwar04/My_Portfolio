@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+  <!-- ===== PRIMARY SEO ===== -->
+  <title>Abhi Kunwar | Frontend Developer & IT Learner</title>
+  <meta name="description" content="Abhi Kunwar — IT Student & Frontend Developer from India. Building modern, responsive web experiences with HTML, CSS, JavaScript and React." />
+  <meta name="keywords" content="Abhi Kunwar, Frontend Developer, IT Student, Web Developer, Portfolio, React, JavaScript, India" />
+  <meta name="author" content="Abhi Kunwar" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://abhikunwar.dev/" />
+  <meta name="theme-color" content="#000000" />
+
+  <!-- ===== OPEN GRAPH (Facebook, WhatsApp, LinkedIn) ===== -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://abhikunwar.dev/" />
+  <meta property="og:title" content="Abhi Kunwar | Frontend Developer & IT Learner" />
+  <meta property="og:description" content="IT Student & Frontend Developer building modern, responsive web experiences. Check out my projects, skills, and more!" />
+ <meta property="og:image" content="https://www.geekyabhi.work.gd/images/og-preview.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Abhi Kunwar Portfolio Preview" />
+  <meta property="og:site_name" content="Abhi Kunwar Portfolio" />
+  <meta property="og:locale" content="en_IN" />
+
+  <!-- ===== TWITTER / X CARD ===== -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Abhi Kunwar | Frontend Developer & IT Learner" />
+  <meta name="twitter:description" content="IT Student & Frontend Developer building modern, responsive web experiences." />
+  <meta name="twitter:image" content="https://abhikunwar.dev/images/og-preview.png" />
+  <meta name="twitter:image:alt" content="Abhi Kunwar Portfolio Preview" />
+
+  <!-- ===== STRUCTURED DATA (JSON-LD) ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Abhi Kunwar",
+    "url": "https://abhikunwar.dev/",
+    "image": "https://abhikunwar.dev/images/profile.gif",
+    "jobTitle": "Frontend Developer",
+    "description": "IT Student & Frontend Developer from India building modern web experiences.",
+    "sameAs": [
+      "https://github.com/Abhikunwar04",
+      "https://www.instagram.com/_abhi__kunwar_"
+    ],
+    "knowsAbout": ["HTML", "CSS", "JavaScript", "React", "Node.js", "Python"]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Share+Tech+Mono&family=Bebas+Neue&family=Barlow+Condensed:wght@200;300;700&display=swap" rel="stylesheet" />
+
+  <!-- Icons & Libs -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- GSAP (before body for gsap.registerPlugin) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="favicon.png" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="loading">
+
+<!-- ===== PRELOADER ===== -->
+<div id="preloader">
+  <div id="ld">
+    <canvas id="mc"></canvas>
+    <div class="scanlines"></div>
+    <div class="vignette"></div>
+
+    <div id="phase1">
+      <span class="greet" id="greetEl"></span>
+    </div>
+
+    <div id="phase2">
+      <div class="corner bl"><span class="sdot"></span><span id="stTxt">LOADING</span></div>
+      <div class="corner br" id="pctC">00%</div>
+
+      <div class="name">
+        <span id="nm">ABHI KUNWAR</span>
+        <span class="gl r" id="glR">ABHI KUNWAR</span>
+        <span class="gl g" id="glG">ABHI KUNWAR</span>
+      </div>
+
+      <div class="under">
+        <div class="ln l"></div>
+        <span class="tag-line">Creative · Builder · Visionary</span>
+        <div class="ln r"></div>
+      </div>
+
+      <div class="prog-wrap">
+        <div class="prog-head">
+          <span>LOADING PORTFOLIO</span>
+          <span id="pctL">0%</span>
+        </div>
+        <div class="prog-track">
+          <div class="prog-fill" id="fill"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ===== END PRELOADER ===== -->
+
+
+<!-- ===== NAVBAR ===== -->
+<header id="top-bar">
+  <div class="header-left">
+    <div class="logo">
+  <lottie-player src="lottie files/Abhi.json" background="transparent" speed="1" loop autoplay style="width:120px; height:40px;"></lottie-player>
+</div>
+    <img src="images/profile.gif" alt="Abhi Kunwar" class="top-profile-pic" />
+  </div>
+  <nav>
+    <div class="hamburger" id="hamburger" aria-label="Toggle menu" role="button" tabindex="0" aria-expanded="false">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  <ul class="nav-links" id="nav-links" role="list">
+  <button class="nav-close-btn" id="navCloseBtn" aria-label="Close menu"><i class="fas fa-times"></i></button>
+  <li><a href="#hero"><i class="fas fa-house"></i><span class="nav-label">Home</span></a></li>
+  <li><a href="#about"><i class="fas fa-user"></i><span class="nav-label">About</span></a></li>
+  <li><a href="#skills"><i class="fas fa-code"></i><span class="nav-label">Skills</span></a></li>
+  <li><a href="#projects"><i class="fas fa-folder-open"></i><span class="nav-label">Projects</span></a></li>
+  <li><a href="#interests"><i class="fas fa-heart"></i><span class="nav-label">Interests</span></a></li>
+  <li><a href="#contact"><i class="fas fa-envelope"></i><span class="nav-label">Contact</span></a></li>
+</ul>
+  </nav>
+</header>
+
+
+<!-- ===== HERO CANVAS SECTION ===== -->
+<div id="heroScroll">
+  <canvas id="heroCanvas" aria-hidden="true"></canvas>
+  <div id="scrollSpacer" aria-hidden="true"></div>
+
+  <div class="hero-wrapper" id="hero">
+    
+
+    <div class="hero-text" role="banner">
+      <h1>Hi, I'm Abhi Kunwar</h1>
+      <p>IT Learner</p>
+      <div class="cta-group">
+        <a href="#projects" class="cta-btn">See My Work</a>
+        <a href="#contact" class="cta-btn ghost">Get in Touch</a>
+      </div>
+      <div class="social-icons">
+        <a href="photo/index.html" class="social-link" style="--clr:#00e5ff" title="Photofolio" aria-label="Photofolio">
+          <i class="fas fa-image"></i>
+        </a>
+        <a href="https://www.instagram.com/_abhi__kunwar_" class="social-link" style="--clr:#E4405F" title="Instagram" aria-label="Instagram" target="_blank" rel="noopener">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/919410332773" class="social-link" style="--clr:#25D366" title="WhatsApp" aria-label="WhatsApp" target="_blank" rel="noopener">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/abhi-kunwar" class="social-link" style="--clr:#0077B5" title="LinkedIn" aria-label="LinkedIn" target="_blank" rel="noopener">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/Abhikunwar04" class="social-link" style="--clr:#c9c9c9" title="GitHub" aria-label="GitHub" target="_blank" rel="noopener">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+   <div class="hero-lottie-right">
+      <lottie-player src="lottie files/heror.json" background="transparent" speed="1" loop autoplay></lottie-player>
+    </div>
+
+<div class="scroll-hint">
+  <span>SCROLL</span>
+  <div class="scroll-arrow">
+    <i class="fas fa-chevron-down"></i>
+    <i class="fas fa-chevron-down"></i>
+    <i class="fas fa-chevron-down"></i>
+  </div>
+</div>
+
+   <div class="glitch-divider">
+  <div class="gb gb1"></div>
+  <div class="gb gb2"></div>
+  <div class="gb gb3"></div>
+  <div class="gb gb4"></div>
+  <div class="gb gb5"></div>
+</div>
+</div>
+
+
+
+
+<!-- ===== END HERO ===== -->
+
+
+<!-- ===== MAIN CONTENT ===== -->
+
+<div id="mainContent">
+  
+  <!-- About -->
+  <section id="about" class="section about-section" data-aos="fade-up">
+    <h2>About Me</h2>
+    <div class="about-container">
+      <div class="about-lottie left" aria-hidden="true">
+        <lottie-player src="lottie files/Developer.json" background="transparent" speed="1" loop autoplay></lottie-player>
+      </div>
+      <div class="about-text">
+        <p>
+          I'm a passionate <strong>IT learner &amp; Frontend Developer</strong> focused on building
+          modern, responsive, and user-centric digital experiences.
+        </p>
+        <p>
+          I enjoy turning ideas into reality through clean UI design, interactive animations,
+          and scalable web applications.
+        </p>
+        <div class="about-highlights">
+          <div class="highlight">⚡ Fast Learner</div>
+          <div class="highlight">🎯 Problem Solver</div>
+          <div class="highlight">💡 UI/UX Enthusiast</div>
+        </div>
+        <div class="about-tags">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>React</span>
+        </div>
+      </div>
+      <div class="about-lottie right" aria-hidden="true">
+        <lottie-player src="lottie files/Stress Management.json" background="transparent" speed="1" loop autoplay></lottie-player>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume -->
+  <div class="resume-wrapper" data-aos="fade-up">
+    <a href="Abhi_Kunwar_Resume.pdf" class="resume-btn" target="_blank" rel="noopener" aria-label="View Resume PDF">
+      <i class="fas fa-file-alt"></i> View Resume
+    </a>
+  </div>
+
+
+  <!-- Skills -->
+  <section class="skills-section" id="skills" data-aos="fade-up">
+    <h2>My Skills</h2>
+    <div class="skills-wrapper">
+      <div class="fade left" aria-hidden="true"></div>
+      <div class="fade right" aria-hidden="true"></div>
+      <div class="skills-track" id="skillsTrack" role="list">
+        <div class="skill" data-color="#61DBFB" role="listitem"><i class="fab fa-react" aria-hidden="true"></i><span>React</span></div>
+        <div class="skill" data-color="#E44D26" role="listitem"><i class="fab fa-html5" aria-hidden="true"></i><span>HTML</span></div>
+        <div class="skill" data-color="#264de4" role="listitem"><i class="fab fa-css3-alt" aria-hidden="true"></i><span>CSS</span></div>
+        <div class="skill" data-color="#f0db4f" role="listitem"><i class="fab fa-js" aria-hidden="true"></i><span>JavaScript</span></div>
+        <div class="skill" data-color="#68A063" role="listitem"><i class="fab fa-node-js" aria-hidden="true"></i><span>Node.js</span></div>
+        <div class="skill" data-color="#e8e8f0" role="listitem"><i class="fab fa-github" aria-hidden="true"></i><span>GitHub</span></div>
+        <div class="skill" data-color="#3776AB" role="listitem"><i class="fab fa-python" aria-hidden="true"></i><span>Python</span></div>
+        <div class="skill" data-color="#00758F" role="listitem"><i class="fas fa-database" aria-hidden="true"></i><span>MySQL</span></div>
+        <div class="skill" data-color="#4DB33D" role="listitem"><i class="fas fa-leaf" aria-hidden="true"></i><span>MongoDB</span></div>
+        <div class="skill" data-color="#007ACC" role="listitem"><i class="fas fa-code" aria-hidden="true"></i><span>VS Code</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section" data-aos="fade-up">
+    <h2>Projects</h2>
+
+    <!-- Filter Bar -->
+    <div class="project-filter" role="group" aria-label="Filter projects by technology">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="html">HTML</button>
+      <button class="filter-btn" data-filter="css">CSS</button>
+      <button class="filter-btn" data-filter="js">JavaScript</button>
+      <button class="filter-btn" data-filter="react">React</button>
+    </div>
+
+    <div class="projects-grid">
+      <div class="project-card" data-tags="html css js">
+        <img src="images/photo-gallery.png" alt="Photography Site Project Preview" loading="lazy" />
+        <h3>Photography Site</h3>
+        <p>A creative photo gallery with custom drip animation effect.</p>
+        <div class="project-tags">
+          <span class="project-tag">HTML</span>
+          <span class="project-tag">CSS</span>
+          <span class="project-tag">JavaScript</span>
+        </div>
+        <div class="project-btns">
+          <a href="photo/index.html" class="project-btn">Live <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
+          <a href="https://github.com/Abhikunwar04/photo-site" class="project-btn ghost" target="_blank" rel="noopener">Code <i class="fab fa-github" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div class="project-card" data-tags="html css js">
+        <img src="images/portfolio.png" alt="Portfolio Starter Project Preview" loading="lazy" />
+        <h3>Portfolio Starter</h3>
+        <p>A basic animated personal site to learn and showcase projects.</p>
+        <div class="project-tags">
+          <span class="project-tag">HTML</span>
+          <span class="project-tag">CSS</span>
+          <span class="project-tag">JavaScript</span>
+        </div>
+        <div class="project-btns">
+          <a href="#" class="project-btn disabled" aria-disabled="true" style="opacity:0.4;pointer-events:none;cursor:not-allowed;">Coming Soon</a>
+          <a href="https://github.com/Abhikunwar04/portfolio" class="project-btn ghost" target="_blank" rel="noopener">Code <i class="fab fa-github" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interests / Hobbies -->
+<section id="interests" class="interests-section" data-aos="fade-up">
+  <div class="section-header">
+    <div class="section-eyebrow">My Hobbies & Interests</div>
+    <h2>Life Beyond the Screen</h2>
+  </div>
+  <div class="interests-grid">
+
+  <div class="interest-card">
+    <span class="ic-number">01</span>
+    <div class="ic-icon">
+      <lottie-player src="lottie files/Cinema.json" background="transparent" speed="1" loop autoplay style="width:70px;height:70px;margin:0 auto;"></lottie-player>
+    </div>
+    <h3>Cinephile</h3>
+    <p>Deep dive into films & series — from indie arthouse to blockbusters. Cinema is where storytelling meets art.</p>
+  </div>
+
+  <div class="interest-card">
+    <span class="ic-number">02</span>
+    <div class="ic-icon">
+      <lottie-player src="lottie files/Music.json" background="transparent" speed="1" loop autoplay style="width:70px;height:70px;margin:0 auto;"></lottie-player>
+    </div>
+    <h3>Music</h3>
+    <p>Music is my constant companion — whether I'm coding, traveling, or just thinking. Every mood has a playlist.</p>
+  </div>
+
+  <div class="interest-card">
+    <span class="ic-number">03</span>
+    <div class="ic-icon">
+      <lottie-player src="lottie files/Workout.json" background="transparent" speed="1" loop autoplay style="width:70px;height:70px;margin:0 auto;"></lottie-player>
+    </div>
+    <h3>Fitness</h3>
+    <p>Strong mind, strong body. Staying active keeps me focused, disciplined and energized every day.</p>
+  </div>
+
+  <div class="interest-card">
+    <span class="ic-number">04</span>
+    <div class="ic-icon">
+      <lottie-player src="lottie files/Travel.json" background="transparent" speed="1" loop autoplay style="width:70px;height:70px;margin:0 auto;"></lottie-player>
+    </div>
+    <h3>Travelling</h3>
+    <p>Every place has a story. I love exploring new cultures, landscapes and finding inspiration beyond my comfort zone.</p>
+  </div>
+
+</div>
+</section>
+
+  <!-- Contact -->
+  <section id="contact" class="feedback-section" data-aos="fade-up">
+    <div class="warrior-gate">
+      <lottie-player src="lottie files/Warrior.json" background="transparent" speed="1" loop autoplay aria-hidden="true"></lottie-player>
+
+      <div class="contact-form-wrapper">
+        <h2>Send Feedback</h2>
+        <form class="contact-form" id="feedback-form" novalidate>
+          <div class="input-group">
+            <i class="fas fa-user" aria-hidden="true"></i>
+            <input type="text" name="from_name" placeholder="Your Name" required autocomplete="name" />
+          </div>
+          <div class="input-group">
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+            <input type="email" name="from_email" placeholder="Your Gmail" required autocomplete="email" />
+          </div>
+          <div class="input-group">
+            <i class="fas fa-comment" aria-hidden="true"></i>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit"><i class="fas fa-paper-plane" aria-hidden="true"></i> Send Message</button>
+        </form>
+      </div>
+
+      <lottie-player src="lottie files/Warrior.json" background="transparent" speed="1" loop autoplay aria-hidden="true"></lottie-player>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">ABHI<span>.</span>KUNWAR</div>
+          <p>IT Student & Frontend Developer crafting modern, responsive web experiences from India.</p>
+          <div class="footer-socials">
+            <a href="https://github.com/Abhikunwar04" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/abhi-kunwar" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/_abhi__kunwar_" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/919410332773" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#interests">Interests</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="#contact">Send Message</a></li>
+            <li><a href="Abhi_Kunwar_Resume.pdf" target="_blank" rel="noopener">View Resume</a></li>
+            <li><a href="photo/index.html">Photofolio</a></li>
+            <li><a href="https://github.com/Abhikunwar04" target="_blank" rel="noopener">GitHub Profile</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+  <p class="footer-copy">
+    Made with <span class="heart" aria-label="love">♥</span> by Abhi Kunwar
+    &nbsp;·&nbsp; &copy; 2025 - <span id="footerYear"></span> All rights reserved.
+  </p>
+  <div class="footer-tech">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JS</span>
+    <span>GSAP</span>
+  </div>
+</div>
+      </div>
+    </div>
+  </footer>
+
+</div><!-- end #mainContent -->
+
+
+<!-- Scripts (defer = after DOM parsed) -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js" defer></script>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<script src="script.js" defer></script>
+
+<!-- Custom Cursor -->
+<div class="cursor-dot"  id="cursorDot"  aria-hidden="true"></div>
+<div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+</body>
+</html>
