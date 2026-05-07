@@ -24,7 +24,7 @@
       <ul class="nav-links">
         <li><a href="#hero">Home</a></li>
         <li><a href="#gallery">Gallery</a></li>
-        <li><a href="javascript:void(0);" id="contact-link">Contact</a></li>
+        <li><a href="#slideshow-icons" id="contact-link" aria-label="Contact via social icons">Contact</a></li>
 
       </ul>
     </nav>
@@ -33,16 +33,16 @@
   <section id="hero">
     <div class="hero-fade-slideshow" data-aos="fade-up">
       <div class="fade-slide">
-        <img src="images/pic1.jpg" />
-        <img src="images/pic2.jpg" />
-        <img src="images/pic3.jpg" />
-        <img src="images/pic4.jpg" />
-        <img src="images/pic5.jpg" />
-        <img src="images/pic6.jpg" />
-        <img src="images/pic7.jpg" />
-        <img src="images/pic8.jpg" />
-        <img src="images/pic9.jpg" />
-        <img src="images/pic10.jpg" />
+        <img src="images/pic1.jpg" alt="Portfolio image 1" />
+        <img src="images/pic2.jpg" alt="Portfolio image 2" />
+        <img src="images/pic3.jpg" alt="Portfolio image 3" />
+        <img src="images/pic4.jpg" alt="Portfolio image 4" />
+        <img src="images/pic5.jpg" alt="Portfolio image 5" />
+        <img src="images/pic6.jpg" alt="Portfolio image 6" />
+        <img src="images/pic7.jpg" alt="Portfolio image 7" />
+        <img src="images/pic8.jpg" alt="Portfolio image 8" />
+        <img src="images/pic9.jpg" alt="Portfolio image 9" />
+        <img src="images/pic10.jpg" alt="Portfolio image 10" />
       </div>
       <div class="hero-overlay">
         <h1 id="main-title">Capturing Life</h1>
@@ -53,10 +53,10 @@
 
   <div class="gallery-social-icons" id="slideshow-icons" data-aos="fade-up">
     <div class="social-icons">
-      <a href="https://instagram.com/_abhi__kunwar_" target="_blank" title="@_abhi__kunwar_"><i class="fab fa-instagram"></i></a>
-      <a href="https://wa.me/9410332773" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-      <a href="https://github.com/Abhikunwar04" target="_blank" title="@Abhikunwar04"><i class="fab fa-github"></i></a>
-      <a href="https://www.snapchat.com/add/abhi_kunwar07" target="_blank" title="@abhi_kunwar07"><i class="fab fa-snapchat-ghost"></i></a>
+      <a href="https://instagram.com/_abhi__kunwar_" target="_blank" rel="noopener" title="@_abhi__kunwar_" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/919410332773?text=Hello%20Abhi" target="_blank" rel="noopener" title="WhatsApp" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://github.com/Abhikunwar04" target="_blank" rel="noopener" title="@Abhikunwar04" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.snapchat.com/add/abhi_kunwar07" target="_blank" rel="noopener" title="@abhi_kunwar07" aria-label="Snapchat"><i class="fab fa-snapchat-ghost"></i></a>
     </div>
   </div>
 
@@ -72,14 +72,14 @@
       <div class="gallery-reels" data-aos="fade-up">
         <h3>Short Videos</h3>
         <div class="reel-wrapper">
-          <button class="reel-btn left" onclick="scrollReels('left')">&#10094;</button>
+          <button class="reel-btn left" onclick="scrollReels('left')" aria-label="Scroll reels left">&#10094;</button>
           <div class="reel-track-scroll" id="reel-scroll">
-            <video src="reels/reel1.mp4"  controls muted playsinline ></video>
-            <video src="reels/reel2.mp4"  controls muted playsinline ></video>
-            <video src="reels/reel3.mp4"  controls muted playsinline ></video>
-            <video src="reels/reel4.mp4"  controls muted playsinline ></video>
+            <video src="reels/reel1.mp4" controls muted playsinline></video>
+            <video src="reels/reel2.mp4" controls muted playsinline></video>
+            <video src="reels/reel3.mp4" controls muted playsinline></video>
+            <video src="reels/reel4.mp4" controls muted playsinline></video>
           </div>
-          <button class="reel-btn right" onclick="scrollReels('right')">&#10095;</button>
+          <button class="reel-btn right" onclick="scrollReels('right')" aria-label="Scroll reels right">&#10095;</button>
         </div>
       </div>
 
@@ -96,43 +96,41 @@
       <img src="images/photo15.jpg" alt="Photo 15" data-aos="zoom-in" />
     </div>
   </section>
+
   <section id="devotional" data-aos="fade-up">
-  <h2>Devotional Moments</h2>
-  <div class="devotional-container">
-    <div class="devotional-item">
-      <img src="images/dev1.jpg" alt="Devotional 1"class="zoomable">
-      <p class="devotional-quote">"ॐ त्र्यम्बकं यजामहे सुगन्धिं पुष्टिवर्धनम्। उर्वारुकमिव बन्धनान्मृत्योर्मुक्षीय मामृतात्।"</p>
+    <h2>Devotional Moments</h2>
+    <div class="devotional-container">
+      <div class="devotional-item">
+        <img src="images/dev1.jpg" alt="Devotional 1" class="zoomable">
+        <p class="devotional-quote">"ॐ त्र्यम्बकं यजामहे सुगन्धिं पुष्टिवर्धनम्। उर्वारुकमिव बन्धनान्मृत्योर्मुक्षीय माऽमृतात्॥"</p>
+      </div>
+      <div class="devotional-item">
+        <img src="images/dev2.jpg" alt="Devotional 2" class="zoomable">
+        <p class="devotional-quote">"जहाँ विश्वास है, वहाँ रास्ता है।"</p>
+      </div>
+      <div class="devotional-item">
+        <img src="images/dev3.jpg" alt="Devotional 3" class="zoomable">
+        <p class="devotional-quote">"ॐ नमः शिवाय - यह मंत्र आत्मा की शुद्धि है।"</p>
+      </div>
     </div>
-    <div class="devotional-item">
-      <img src="images/dev2.jpg" alt="Devotional 2"class="zoomable">
-      <p class="devotional-quote">"जहाँ विश्वास है, वहाँ रास्ता है।"</p>
-    </div>
-    <div class="devotional-item">
-      <img src="images/dev3.jpg" alt="Devotional 3"class="zoomable">
-      <p class="devotional-quote">"ॐ नमः शिवाय - यह मंत्र आत्मा की शुद्धि है।"</p>
-    </div>
-  </div>
-</section>
+  </section>
 
-
-<section id="Feedback">
-  <h2 data-aos="fade-left">Feedback</h2>
- <form data-aos="fade-up">
-  <input type="text" id="name" name="name" placeholder="Your Name" required />
-  <input type="email" id="email" name="email" placeholder="Your Email" required />
-  <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-  <button type="submit">Send</button>
-</form>
-
-  </form>
-</section>
+  <section id="Feedback">
+    <h2 data-aos="fade-left">Feedback</h2>
+    <form data-aos="fade-up" id="feedback-form" aria-label="Feedback form">
+      <input type="text" id="name" name="name" placeholder="Your Name" required aria-label="Your Name" />
+      <input type="email" id="email" name="email" placeholder="Your Email" required aria-label="Your Email" />
+      <textarea id="message" name="message" placeholder="Your Message" required aria-label="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
 
   <footer>
     <p>&copy; 2025 My Photography. All rights reserved. (@_abhi__kunwar_)</p>
   </footer>
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <button id="back-to-top" title="Back to Top">↑</button>
-  <script src="script.js"></script>
+  <button id="back-to-top" title="Back to Top" aria-label="Back to top">↑</button>
+  <script src="script.js" defer></script>
 </body>
 </html>
